@@ -1,0 +1,78 @@
+.header {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #7b2b41;
+  position: relative;
+  z-index: 1000;
+}
+
+.header .logo {
+  width: 150px;
+}
+
+.header .search-box {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu button {
+  background-color: #7b2b41;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header .menu button:hover {
+  background-color: #6b2238;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar .menu-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #f5f5f5;
+  color: #7b2b41;
+}
+
+.sidebar .icon {
+  margin-right: 10px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
